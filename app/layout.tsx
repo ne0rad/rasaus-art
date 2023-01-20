@@ -1,4 +1,6 @@
 import Navbar from './components/Navbar'
+import Box from './components/Box'
+
 import './globals.css'
 
 export default function RootLayout({
@@ -13,9 +15,9 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
             <head />
-            <body>
+            <body className="h-screen">
                 <Navbar />
-                {children}
+                <Box>{children}</Box>
             </body>
         </html>
     )

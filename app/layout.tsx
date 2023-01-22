@@ -1,7 +1,7 @@
-import Navbar from './components/Navbar/Navbar'
-import Box from './components/Box'
+import Navbar from '@/components/Navbar/Navbar'
+import Box from '@/components/Box'
 
-import './globals.css'
+import '@/globals.css'
 
 export default function RootLayout({
     children,

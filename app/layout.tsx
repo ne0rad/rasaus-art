@@ -15,7 +15,7 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
             <head />
-            <body className="h-screen">
+            <body className="h-screen dark:bg-gray-900 dark:text-white">
                 <Navbar />
                 <Box>{children}</Box>
             </body>

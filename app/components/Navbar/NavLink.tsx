@@ -1,15 +1,12 @@
-import Link from 'next/link'
-
-export default function NavLink({
-    href,
-    children,
-}: {
+type NavLinkType = {
     href: string
-    children: string
-}) {
+    children: React.ReactNode
+}
+
+export default function NavLink({ href, children }: NavLinkType) {
     return (
-        <Link href={href} className="mx-1 font-bold hover:underline">
+        <a href={href} className="mx-1 font-bold hover:underline">
             {children}
-        </Link>
+        </a>
     )
 }
